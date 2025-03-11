@@ -9,7 +9,7 @@ import com.example.newsfeedapp.presentation.viewmodal.BookmarkViewModel
 
 @Composable
 fun BookmarkScreen() {
- /*    val viewModel: BookmarkViewModel by viewModels()
+     val viewModel: BookmarkViewModel by viewModels()
     val bookmarks by viewModel.bookmarks.collectAsState()
 
     LazyColumn {
@@ -19,5 +19,5 @@ fun BookmarkScreen() {
                 Text("Remove Bookmark")
             }
         }
-    }*/
+    }
 }
