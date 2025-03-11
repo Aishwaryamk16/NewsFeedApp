@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    //For Hilt and kapt add plugin in build.gradle(app-level)
+    plugins {
+        id("com.google.dagger.hilt.android") version "2.50" // Latest Hilt Plugin
+        id("org.jetbrains.kotlin.kapt") version "1.9.21" // Latest KAPT version
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "NewsFeedApp"
+include ':app'
